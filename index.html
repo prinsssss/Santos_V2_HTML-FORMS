@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourLastname_V2-HTML-FORMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+
+<body>
+    <div id="curtain-menu">
+        <button class="menu-toggle">
+            <span>Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Italian</a></li>
+                <li><a href="#">Chinese</a></li>
+                <li class="dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Vegetarian</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mexican</a></li>
+                <li class="dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Specials</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <!-- Add more specials here -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-container">
+        <div class="logo">
+            <!-- Add logo image here -->
+        </div>
+        <h1>Golden Corral</h1>
+        <p>Delight in every bite</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label>Type of Cuisine:</label>
+                <!-- Add cuisine selection here -->
+                <select id="cuisine" name="cuisine" required>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="healthy">Healthy Options</option>
+                    <option value="specials">Specials</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment">Mode of Payment:</label>
+                <select id="payment" name="payment" required>
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dine-option">Dine-in / Take-out:</label>
+                <input type="radio" id="dine-in" name="dine-option" value="dine-in">
+                <label for="dine-in">Dine-in</label>
+                <input type="radio" id="take-out" name="dine-option" value="take-out">
+                <label for="take-out">Take-out</label>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments/Instruction:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit">Order Placed</button>
+            <button type="button">Cancel</button>
+        </form>
+    </div>
+
+</body>
+</html>
